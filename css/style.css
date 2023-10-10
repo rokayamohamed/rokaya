@@ -300,6 +300,12 @@ header .container .navigation ul.show {
   -o-transform: skewY(5deg);
   z-index: -1;
 }
+.landing .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .landing .container .content > h2 {
   font-size: 50px;
   font-weight: 900;
@@ -359,15 +365,15 @@ header .container .navigation ul.show {
 }
 @media (min-width: 992px) {
   .landing .container .image {
-    min-width: 50%;
-    max-width: 50%;
-    height: 520px;
+    min-width: 40%;
+    max-width: 40%;
+    height: 440px;
     max-height: 50%;
     overflow: hidden;
     border-radius: 63% 37% 50% 50%/70% 68% 32% 30%;
   }
   .landing .container .content {
-    width: 45%;
+    width: 55%;
   }
   .landing .container .image {
     position: relative;
