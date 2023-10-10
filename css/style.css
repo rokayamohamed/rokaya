@@ -947,7 +947,7 @@ footer .container .icons a:nth-child(2):hover i {
   background-color: #0a66c2;
 }
 footer .container .icons a:nth-child(3):hover i {
-  background-color: #000;
+  background-color: #0088cc;
 }
 footer > p {
   color: #777;
@@ -957,7 +957,7 @@ footer > p {
 }
 
 @media (max-width: 767px) {
-  footer .container  {
+  footer .container {
     display: flex;
     align-items: center;
     justify-content: center;
