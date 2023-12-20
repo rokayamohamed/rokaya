@@ -73,6 +73,31 @@ a {
 .scroll:hover {
   background-color: #e91e69;
 }
+@media (max-width: 450px) {
+  .scroll {
+    display: none !important;
+  }
+}
+.scroll-height {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: none;
+  background-color: #f13b3b40;
+  height: 5px;
+  direction: ltr;
+  z-index: 9999;
+}
+.scroll-height > div {
+  direction: ltr;
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 .main-title {
   text-align: center;
   font-weight: normal;
@@ -127,8 +152,8 @@ a {
   z-index: 1;
   background-image: linear-gradient(135deg, white 25%, transparent 25%),
     linear-gradient(225deg, white 25%, transparent 25%);
-  background-size: 30px 30px;
-}
+    background-size: 30px 30px;
+  }
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -157,13 +182,15 @@ a {
 }
 /* Start Header  */
 header {
-  position: relative;
-  -webkit-box-shadow: 0 0 10px #ddd;
-  -moz-box-shadow: 0 0 10px #ddd;
-  -ms-box-shadow: 0 0 10px #ddd;
-  -o-box-shadow: 0 0 10px #ddd;
-  box-shadow: 0 0 10px #ddd;
-  background-color: white;
+  padding: 0px 10px;
+  background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 10000;
+}
+header.fixed {
+  background-color: #ddd;
 }
 header .container {
   position: relative;
@@ -238,14 +265,6 @@ header .container .navigation ul.show {
   flex-direction: column;
 }
 @media (max-width: 767px) {
-  header {
-    box-shadow: 1px 6px 10px #ddd;
-    -webkit-box-shadow: 1px 6px 10px #ddd;
-    -moz-box-shadow: 1px 6px 10px #ddd;
-    -ms-box-shadow: 1px 6px 10px #ddd;
-    -o-box-shadow: 1px 6px 10px #ddd;
-    background-color: #fafafa;
-  }
   header .container .btn {
     display: block;
   }
@@ -365,9 +384,9 @@ header .container .navigation ul.show {
 }
 @media (min-width: 992px) {
   .landing .container .image {
-    min-width: 40%;
-    max-width: 40%;
-    height: 440px;
+    min-width: 35%;
+    max-width: 35%;
+    height: 380px;
     max-height: 50%;
     overflow: hidden;
     border-radius: 63% 37% 50% 50%/70% 68% 32% 30%;
@@ -476,7 +495,7 @@ header .container .navigation ul.show {
     top: 0;
   }
   50% {
-    top: -50px;
+    top: 50px;
   }
 }
 /* End Landing  */
