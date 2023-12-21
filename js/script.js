@@ -5,16 +5,7 @@ const allLis = document.querySelectorAll("header .container .navigation ul li");
 const scrollProgress = document.querySelector(".scroll-height");
 const totalHeight = document.body.scrollHeight - window.innerHeight;
 const scrollProgressDiv = document.querySelector(".scroll-height > div");
-let changeDay = document.querySelector(".btn-shape span.change-day");
-let changeDay2 = document.querySelector(".btn-shape span.change-day2");
-let currentNumber = parseInt(changeDay.innerHTML);
-let currentNumber2 = parseInt(changeDay2.innerHTML);
-setInterval(function () {
-  currentNumber++;
-  changeDay.innerHTML = currentNumber;
-  currentNumber2++;
-  changeDay2.innerHTML = currentNumber2;
-}, 86400000)
+
 btn.addEventListener("click", function () {
   navigatinBar.classList.toggle("show");
 });
