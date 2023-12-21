@@ -152,8 +152,8 @@ a {
   z-index: 1;
   background-image: linear-gradient(135deg, white 25%, transparent 25%),
     linear-gradient(225deg, white 25%, transparent 25%);
-    background-size: 30px 30px;
-  }
+  background-size: 30px 30px;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -755,7 +755,6 @@ header .container .navigation ul.show {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   position: relative;
-  background-color: var(--section-background);
 }
 .testimonials .container {
   margin-top: 100px;
@@ -777,16 +776,11 @@ header .container .navigation ul.show {
   -ms-box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
   -o-box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
   box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
-  -webkit-transition: transform var(--main-transition),
-    box-shadow var(--main-transition);
-  -moz-transition: transform var(--main-transition),
-    box-shadow var(--main-transition);
-  -ms-transition: transform var(--main-transition),
-    box-shadow var(--main-transition);
-  -o-transition: transform var(--main-transition),
-    box-shadow var(--main-transition);
-  transition: transform var(--main-transition),
-    box-shadow var(--main-transition);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
 }
 .testimonials .container .box:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 15px;
@@ -829,6 +823,7 @@ header .container .navigation ul.show {
 .contact {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
 }
 
 .contact .content {
@@ -998,3 +993,165 @@ footer > p {
 }
 
 /* End Footer  */
+
+/* Start Experiences */
+.experiences-sec {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-color: var(--section-background);
+}
+.experiences-sec .container {
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.experiences-sec ul li {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+ul li p {
+  line-height: 1.6;
+}
+ul li .key-1 {
+  width: 217px;
+  height: 17px;
+}
+ul li .key-2 {
+  width: 76px;
+  height: 17px;
+}
+ul li .key-3 {
+  width: 54px;
+  height: 17px;
+}
+ul li .key-4 {
+  width: 73px;
+  height: 17px;
+}
+ul li > .blue {
+  border-left: 2px solid var(--blue-color);
+}
+ul li > .green {
+  border-left: 2px solid var(--green-color);
+}
+ul li > .orange {
+  border-left: 2px solid var(--orange-color);
+}
+ul li > .red {
+  border-left: 2px solid var(--red-color);
+}
+/* End Experiences */
+
+/* Start Volunteering  */
+.volunteering {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+}
+.volunteering .container {
+  margin-top: 100px;
+}
+.volunteering-content ul li {
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+.volunteering-content ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+.volunteering-content ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
+}
+.volunteering-content ul li.one::before {
+  width: 133px;
+    height: 22px;
+}
+.volunteering-content ul li.two::before {
+  width: 56px;
+  height: 21px;
+}
+.volunteering-content ul li.three::before {
+  width: 66px;
+}
+.volunteering-content ul li.done::before {
+  background-color: var(--blue-color);
+}
+.volunteering-content ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+.volunteering-content .launch-icon {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+}
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+/* End Volunteering  */
+
+/* Start Education  */
+.education {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-color: var(--section-background);
+}
+.education .container {
+  margin-top: 100px;
+}
+.latest-news .news-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.latest-news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+.latest-news .info {
+  flex-grow: 1;
+}
+.latest-news .info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .latest-news .news-row {
+    display: block;
+  }
+  .latest-news .news-row .label {
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+/* End Education  */
