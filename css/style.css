@@ -1025,7 +1025,7 @@ ul li .key-1 {
   height: 17px;
 }
 ul li .key-2 {
-  width: 76px;
+  width: 54px;
   height: 17px;
 }
 ul li .key-3 {
@@ -1130,7 +1130,7 @@ ul li > .red {
 .latest-news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 .latest-news .news-row img {
   width: 100px;
